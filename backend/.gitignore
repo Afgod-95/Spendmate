@@ -1,0 +1,8 @@
+# Environment variables
+.env
+
+# Any secrets file
+secrets.py
+config.json
+*.pem
+*.key
