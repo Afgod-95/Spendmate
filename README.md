@@ -1,6 +1,6 @@
 # Spendmate
 
-Spendmate is a personal finance and expense tracking app designed to help users manage their income, expenses, and savings in a simple and intuitive way. It includes both a backend and a mobile app built with Expo.
+Spendmate is a personal finance and expense tracking app designed to help users manage their income, expenses, and savings in a simple and intuitive way. It includes both backend and a mobile app built with Expo.
 
 ## Features
 
