@@ -2,7 +2,7 @@ from flask import jsonify, request
 from werkzeug.utils import secure_filename
 from app.supabase.supabase_client import supabase
 import uuid as uuid_lib
-from backend.app.helpers.image_helper import optimize_image
+from app.helpers.image_helper import optimize_image
 
 # Allowed image extensions
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'webp'}
