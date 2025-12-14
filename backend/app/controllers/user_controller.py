@@ -35,6 +35,9 @@ def register_user() -> tuple:
         if not response.user:
             return jsonify({"error": response.session or "Registration failed"}), 400
 
+        if response.user.email:
+            return jsonify({"error": "User email already exist"}), 500
+        
         # JSON-serializable user object
         user_data = {
             "id": response.user.id,
@@ -43,7 +46,7 @@ def register_user() -> tuple:
             "user_metadata": response.user.user_metadata
         }
 
-        # Insert into profiles table instead of users table
+        # Insert into profiles table
         uuid = response.user.id
         supabase.table("profiles").insert({
             "id": uuid,
